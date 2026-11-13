@@ -19,10 +19,12 @@ class Calculadora:
 
     # Paso 3: Agregar los botones
     botones = [
+      
         ("7", "8", "9", "/"),
         ("4", "5", "6", "*"),
         ("1", "2", "3", "-"),
         ("C", "0", "=", "+"),
+       
     ]
 
     for i, fila in enumerate(botones):
@@ -30,7 +32,7 @@ class Calculadora:
         btn = tk.Button(
             self.ventana,
             text=texto,
-            font=("Arial", 18),
+            font=("Arial", 14),
             width=4,
             height=2,
             command=lambda t=texto: self.click(t),
